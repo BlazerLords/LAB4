@@ -1,0 +1,114 @@
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-image {
+  max-width: 100%;
+   position: relative;
+}
+
+.logo2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 64px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1em;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { letter-spacing: 1em; }
+    50% { letter-spacing: 1.2em; }
+    100% { letter-spacing: 1em; }
+}
+
+.logo {
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 800;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+  header .logo {
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: 700;
+  }
+section {
+  margin-top: 100px;
+  display: flex;
+}
+
+section + section {
+  margin-top: 50px;
+}
+
+section img {
+  max-height: 100%;
+  flex: 0;
+}
+
+section {
+  margin-top: 100px;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.5em;
+  padding: 0 5%;
+  text-indent: 10%;
+}
+
+section > div {
+  padding: 0 5%;
+}
+
+section h2 {
+  margin-bottom: 60px;
+}
+
+.awards {
+  flex-direction: column;
+}
+
+.awards .slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-button {
+  height: 45px;
+}
+
+.photos-slider {
+  position: relative;
+  background: var(--color-first);
+  align-items: center;
+  overflow-x: scroll;
+
+  height: 600px;
+}
+
+.photos-slider .wrapper {
+  display: flex;
+  gap: 50px;
+}

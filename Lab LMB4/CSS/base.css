@@ -1,0 +1,86 @@
+:root {
+  --color-first: #172C43;
+  --white: #fff;
+  --black: #000000;
+  --turquoise: #12eefe;
+  --box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+.mirrored {
+  transform: scale(-1, -1);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color-first);
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+header .navbar span {
+  padding: 4rem;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  color: var(--white);
+  transition: 0.5s;
+}
+
+header .navbar a {
+  font-size: 2.3rem;
+  margin-left: 2rem;
+
+  justify-content: space-between;
+  color: var(--white);
+  transition: 0.5s;
+}
+
+header .navbar a:hover {
+  color: var(--turquoise);
+}
+
+header svg {
+  cursor: pointer;
+}
+
+footer {
+  background: var(--color-first);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer .social {
+  display: flex;
+  gap: 40px;
+}
+
+footer .copyright {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
